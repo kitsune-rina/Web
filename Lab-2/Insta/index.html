@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <title>Instagram home page</title>
+        <style>
+            body {
+                background-color:#fafafa;
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .window {
+                background-color: white;
+                padding: 28px;
+                border-radius: 10px;
+                width: 380px;
+                text-align: center;
+                flex-direction: column;
+            }
+            .dataentry h2 {
+                font-family: Billabong,Lobster;
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+            input {
+                width: 90%;
+                padding: 12px;
+                margin: 8px 0;
+                border:1 px solid color gray;
+                border-radius: 3px;
+                font-size: 14px;
+                background: #fafafa;
+            }
+            button[type="submit"] {
+                background-color:royalblue;
+                color: white;
+                padding: 10px;
+                width: 100%;
+                font-size: 16px;
+                border-radius: 6px;
+                font-weight: bold;
+            }
+            button[type="submit"]:hover {
+                background-color:royalblue;
+            }
+            button[type="button"] {
+                background-color: transparent;
+                border: 1px solid #dbdbdb;
+                padding: 10px;
+                width: 100%;
+                font-size: 16px;
+                border-radius: 6px;
+                font-weight: bold;
+                cursor: pointer
+                }
+                button[type="button"]:hover {
+                    background-color:floralwhite;
+                }
+                a {
+                    color:deepskyblue;
+                    font-size: 16px;
+                }
+                .miniwindow {
+                    background-color: white;
+                    padding: 17px;
+                    width: 405px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                .miniwindow h5 {
+                    font-size: 14px;
+                    color:dimgrey;
+                    display: inline;
+                }
+                .photo img {
+                width: 500px;
+                margin-bottom: 20px;
+            }
+            .rigthside{
+                flex-direction: column;
+            }
+            </style>
+        </head>
+        <body>
+            <div class="photo">
+                <img src="https://wave.video/blog/wp-content/uploads/2020/08/Instagram-reels-1024x955.jpg.webp" alt="Instagram image">
+
+                </div>
+                <div class="rigthside">
+            <div class="window">
+                <div class="dataentry">	
+                    <form action="login">
+                        <h2>Instagram</h2>
+                        <fieldset>
+                            <input 
+                                type="text"
+                                placeholder="Телефон, имя пользователя или эл.адрес"
+                                required
+                            >
+                        </fieldset>
+                        <fieldset>
+                            <input 
+                                type="password" 
+                                placeholder="Пароль"
+                                required
+                            >
+                        </fieldset>
+                        <fieldset>
+                            <button type="submit">Войти</button>
+                            <h5><b>ИЛИ</b></h5>
+                            <a href="#">Войти через Facebook</a><br>
+                            <a href="#">Забыли пароль?</a>
+                            <hr>
+                            <button type="button">Создать аккаунт</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </fieldset>
+            <div class="miniwindow">
+                <fieldset>
+                <h5>У вас еще нет аккаунта?</h5> <a href="#">Зарегистрироваться</a>
+            </fielset>
+            </body>
+                
