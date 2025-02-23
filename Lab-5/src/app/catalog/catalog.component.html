@@ -1,0 +1,175 @@
+<p>catalog works!</p>
+<p>catalog works!</p>
+<div class="catalog">
+  <h2>Product Catalog</h2>
+  <div class="products">
+    <div class="product-card">
+      <img [src]="products[0].imageUrl" [alt]="products[0].name" class="product-image" />
+      <h3>{{ products[0].name }}</h3>
+      <p>Price: ${{ products[0].price }}</p>
+      <a [href]="products[0].link" target="_blank">View Product</a>
+      <div class="buttons">
+        <button (click)="likesProcess(0)">LIKE ❤️ {{ products[0].likes || 0 }}</button>
+        <button (click)="deleteProcess(0)" class="delete">DELETE ❌</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img [src]="products[1].imageUrl" [alt]="products[1].name" class="product-image" />
+      <h3>{{ products[1].name }}</h3>
+      <p>Price: ${{ products[1].price }}</p>
+      <a [href]="products[1].link" target="_blank">View Product</a>
+      <div class="buttons">
+        <button (click)="likesProcess(1)">LIKE ❤️ {{ products[1].likes || 0 }}</button>
+        <button (click)="deleteProcess(1)" class="delete">DELETE ❌</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img [src]="products[2].imageUrl" [alt]="products[2].name" class="product-image" />
+      <h3>{{ products[2].name }}</h3>
+      <p>Price: ${{ products[2].price }}</p>
+      <a [href]="products[2].link" target="_blank">View Product</a>
+      <div class="buttons">
+        <button (click)="likesProcess(2)">LIKE ❤️ {{ products[2].likes || 0 }}</button>
+        <button (click)="deleteProcess(2)" class="delete">DELETE ❌</button>
+      </div>
+    </div>
+    <div class="product-card">
+        <img [src]="products[3].imageUrl" [alt]="products[3].name" class="product-image" />
+        <h3>{{ products[3].name }}</h3>
+        <p>Price: ${{ products[3].price }}</p>
+        <a [href]="products[3].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(3)">LIKE ❤️ {{ products[3].likes || 0 }}</button>
+          <button (click)="deleteProcess(3)" class="delete">DELETE ❌</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img [src]="products[4].imageUrl" [alt]="products[4].name" class="product-image" />
+        <h3>{{ products[4].name }}</h3>
+        <p>Price: ${{ products[4].price }}</p>
+        <a [href]="products[4].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(4)">LIKE ❤️ {{ products[4].likes || 0 }}</button>
+          <button (click)="deleteProcess(4)" class="delete">DELETE ❌</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img [src]="products[5].imageUrl" [alt]="products[5].name" class="product-image" />
+        <h3>{{ products[5].name }}</h3>
+        <p>Price: ${{ products[5].price }}</p>
+        <a [href]="products[5].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(5)">LIKE ❤️ {{ products[5].likes || 0 }}</button>
+          <button (click)="deleteProcess(5)" class="delete">DELETE ❌</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img [src]="products[6].imageUrl" [alt]="products[6].name" class="product-image" />
+        <h3>{{ products[6].name }}</h3>
+        <p>Price: ${{ products[6].price }}</p>
+        <a [href]="products[6].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(6)">LIKE ❤️ {{ products[2].likes || 0 }}</button>
+          <button (click)="deleteProcess(6)" class="delete">DELETE ❌</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img [src]="products[7].imageUrl" [alt]="products[7].name" class="product-image" />
+        <h3>{{ products[7].name }}</h3>
+        <p>Price: ${{ products[7].price }}</p>
+        <a [href]="products[7].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(7)">LIKE ❤️ {{ products[7].likes || 0 }}</button>
+          <button (click)="deleteProcess(7)" class="delete">DELETE ❌</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img [src]="products[8].imageUrl" [alt]="products[8].name" class="product-image" />
+        <h3>{{ products[8].name }}</h3>
+        <p>Price: ${{ products[8].price }}</p>
+        <a [href]="products[8].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(8)">LIKE ❤️ {{ products[8].likes || 0 }}</button>
+          <button (click)="deleteProcess(8)" class="delete">DELETE ❌</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img [src]="products[9].imageUrl" [alt]="products[9].name" class="product-image" />
+        <h3>{{ products[9].name }}</h3>
+        <p>Price: ${{ products[9].price }}</p>
+        <a [href]="products[9].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(9)">LIKE ❤️ {{ products[9].likes || 0 }}</button>
+          <button (click)="deleteProcess(9)" class="delete">DELETE ❌</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img [src]="products[10].imageUrl" [alt]="products[10].name" class="product-image" />
+        <h3>{{ products[10].name }}</h3>
+        <p>Price: ${{ products[10].price }}</p>
+        <a [href]="products[10].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(10)">LIKE ❤️ {{ products[10].likes || 0 }}</button>
+          <button (click)="deleteProcess(10)" class="delete">DELETE ❌</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img [src]="products[11].imageUrl" [alt]="products[11].name" class="product-image" />
+        <h3>{{ products[11].name }}</h3>
+        <p>Price: ${{ products[11].price }}</p>
+        <a [href]="products[11].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(11)">LIKE ❤️ {{ products[11].likes || 0 }}</button>
+          <button (click)="deleteProcess(11)" class="delete">DELETE ❌</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img [src]="products[12].imageUrl" [alt]="products[12].name" class="product-image" />
+        <h3>{{ products[12].name }}</h3>
+        <p>Price: ${{ products[12].price }}</p>
+        <a [href]="products[12].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(12)">LIKE ❤️ {{ products[12].likes || 0 }}</button>
+          <button (click)="deleteProcess(12)" class="delete">DELETE ❌</button>
+        </div>
+      </div>      
+      <div class="product-card">
+        <img [src]="products[13].imageUrl" [alt]="products[13].name" class="product-image" />
+        <h3>{{ products[13].name }}</h3>
+        <p>Price: ${{ products[13].price }}</p>
+        <a [href]="products[13].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(13)">LIKE ❤️ {{ products[13].likes || 0 }}</button>
+          <button (click)="deleteProcess(13)" class="delete">DELETE ❌</button>
+        </div>
+      </div>      
+      <div class="product-card">
+        <img [src]="products[14].imageUrl" [alt]="products[14].name" class="product-image" />
+        <h3>{{ products[14].name }}</h3>
+        <p>Price: ${{ products[14].price }}</p>
+        <a [href]="products[14].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(14)">LIKE ❤️ {{ products[14].likes || 0 }}</button>
+          <button (click)="deleteProcess(14)" class="delete">DELETE ❌</button>
+        </div>
+      </div>      <div class="product-card">
+        <img [src]="products[15].imageUrl" [alt]="products[15].name" class="product-image" />
+        <h3>{{ products[15].name }}</h3>
+        <p>Price: ${{ products[15].price }}</p>
+        <a [href]="products[15].link" target="_blank">View Product</a>
+        <div class="buttons">
+          <button (click)="likesProcess(15)">LIKE ❤️ {{ products[15].likes || 0 }}</button>
+          <button (click)="deleteProcess(15)" class="delete">DELETE ❌</button>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+
+
+
+  
